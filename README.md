@@ -24,6 +24,7 @@
 - Released on 2002 which is my birthyear
 - Able to say "I use Arch, btw"
 - It's logo is an 'A' and it's my favorite letter (I think)
+
 Congrats, you have been convinced that Arch is superior. Now let's install Arch Linux
 
 ## Installation Guide: Base Arch Installation
