@@ -23,7 +23,7 @@
 
 ## Successfully install Arch Linux?
 - Congratulations! You’ve escaped the confines of proprietary bloat. Your system is now as lightweight as your soul after uninstalling Windows. Enjoy the freedom
-- Don’t panic if things break—that’s how you learn. The Arch Wiki is your bible and the terminal is your playground.
+- Don’t panic if things break, that’s how you learn. The Arch Wiki is your bible and the terminal is your playground.
 - Also, feel free to say "I use Arch, btw" to strangers you met
 
 # Essential packages
