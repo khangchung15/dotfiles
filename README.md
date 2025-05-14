@@ -12,7 +12,7 @@
 - Hyprland
 - Basic terminal emulator proficiency
 
-## Why Arch over other distros?
+## Why Arch Linux?
 - Bloat-free (no preinstalled solitaire)
 - Yours (no corporate "helpful" background services)
 - Transparent (fully open source)
@@ -21,9 +21,12 @@
 - Helps you explore and read the manual (Arch Wiki)
 - Fully customizable from top to bottom
 - No holding hands like other Linux distros
+- Considered by many to be the most difficult OS to install
+- Other distros have many unnecessary pre-installed software
+- Hyprland will be easier to install
 - Released on 2002 which is my birthyear
 - Able to say "I use Arch, btw"
-- It's logo is an 'A' and it's my favorite letter (I think)
+- Its logo is an 'A' and it's my favorite letter (I think)
 
 Congrats, you have been convinced that Arch is superior. Now let's install Arch Linux
 
