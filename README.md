@@ -4,8 +4,8 @@
 
 ## Features
 - **Hyprland**: Dynamic tiling, smooth animations, custom keybinds
-- **Waybar**: Highly customizable bar with Catppuccin Mocha theme
-- **Rofi**: App launcher with window switching
+- **Waybar**: Navigation bar
+- **Rofi**: App launcher
 
 ## Prerequisites
 - Arch linux
@@ -37,26 +37,26 @@ Start Hyprland: ```exec Hyprland```
 
 ## Hyprland Keybinds (Super = Windows Key)
 Window Management
-    Super + Left-Click & Drag → Move window
-    Super + Right-Click & Drag → Resize window
-    Super + Arrow Keys → Focus window in direction
-    Super + Shift + Arrow Keys → Move window to edge (snap)
-    Super + Alt + Arrow Keys → Swap window positions
-    Super + T → Toggle floating (hover window first)
-    Super + F → Fullscreen (hide bar)
-    Super + M → Fullscreen (keep bar visible)
-    Super + Q → Close window (hover)
+- Super + Left-Click & Drag → Move window
+- Super + Right-Click & Drag → Resize window
+- Super + Arrow Keys → Focus window in direction
+- Super + Shift + Arrow Keys → Move window to edge (snap)
+- Super + Alt + Arrow Keys → Swap window positions
+- Super + T → Toggle floating (hover window first)
+- Super + F → Fullscreen (hide bar)
+- Super + M → Fullscreen (keep bar visible)
+- Super + Q → Close window (hover)
 
 Workspaces
-    Super + 1-9 → Switch workspace
-    Super + Shift + 1-9 → Move window to workspace
+- Super + 1-9 → Switch workspace
+- Super + Shift + 1-9 → Move window to workspace
 
 Utilities
-    Super + Enter → Open Kitty terminal
-    Super + B → Open Firefox
-    Super + V → Clipboard manager
-    Super + Shift + S → Screenshot
-    Super + Shift + H → Toggle night light
+- Super + Enter → Open Kitty terminal
+- Super + B → Open Firefox
+- Super + V → Clipboard manager
+- Super + Shift + S → Screenshot
+- Super + Shift + H → Toggle night light
 
 Basic keybinds for terminal:
 - Ctrl + L: Clear terminal screen (hover)
@@ -67,30 +67,30 @@ Basic keybinds for terminal:
 
 ## Terminal Cheat Sheet
 File Operations
-    touch file.txt → Create empty file
-    nano file.txt → Edit file (Ctrl+O to save, Ctrl+X to exit)
-    cp file.txt newfile.txt → Copy file
-    mv file.txt ~/Documents/ → Move/rename file
-    rm file.txt → Delete file
+- touch file.txt → Create empty file
+- nano file.txt → Edit file (Ctrl+O to save, Ctrl+X to exit)
+- cp file.txt newfile.txt → Copy file
+- mv file.txt ~/Documents/ → Move/rename file
+- rm file.txt → Delete file
 
 Navigation
-    ls → List files
-    ls -a → List all files (including hidden)
-    cd ~/Documents → Change directory
-    cd ~ → Go to root directory
-    cd .. → Go back one folder
-    pwd → Show current directory path
+- ls → List files
+- ls -a → List all files (including hidden)
+- cd ~/Documents → Change directory
+- cd ~ → Go to root directory
+- cd .. → Go back one folder
+- pwd → Show current directory path
 
 System
-    sudo pacman -S package → Install package (e.g., firefox)
-    sudo pacman -Syu → Update all packages
-    sudo systemctl start service → Start a service (e.g., bluetooth)
+- sudo pacman -S package → Install package (e.g., firefox)
+- sudo pacman -Syu → Update all packages
+- sudo systemctl start service → Start a service (e.g., bluetooth)
 
 Shortcuts
-    Ctrl+C → Force-stop current command
-    Ctrl+D → Exit terminal session
-    Ctrl+L or clear → Clear terminal
-    Ctrl+R → Search command history
-    Ctrl+Shift+C/V → Copy/paste in terminal (depends on emulator)
+- Ctrl+C → Force-stop current command
+- Ctrl+D → Exit terminal session
+- Ctrl+L or clear → Clear terminal
+- Ctrl+R → Search command history
+- Ctrl+Shift+C/V → Copy/paste in terminal (depends on emulator)
 
-## Do not run ``` rm -rf```, this will recursively force to delete everything
+## Do not run ```rm -rf```, this will recursively force to delete everything
