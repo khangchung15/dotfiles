@@ -28,7 +28,7 @@
 Congrats, you have been convinced that Arch is superior. Now let's install Arch Linux
 
 ## Installation Guide: Base Arch Installation
-1. If dual boot with Windows (change between Arch and Windows), then go to Disc Management and allocate more free space for Arch Linux (minimum 50GB recommended). If only Arch, then skip to step 2
+1. If dual boot with Windows (change between Arch and Windows), then go to Disc Management and allocate more free space for Arch Linux (minimum 50GB recommended). If you only want Arch, then skip to step 2
 2. Install Etcher, Rufus, or Ventoy to make bootable USB. I used Rufus for Arch
 3. Install ISO file from archlinux.org/download | Scroll all the way down and find your country (This only helps download faster, actual files are all the same)
 4. Go to BIOS/UEFI (can be entered via "Recovery Options" (if on Windows) or a shortcut varies depends on motherboard companies
