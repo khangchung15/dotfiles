@@ -17,7 +17,7 @@
 2. Install Etcher, Rufus, or Ventoy to make bootable USB. I used Rufus for Arch
 3. Install ISO file from archlinux.org/download | Scroll all the way down and find your country (This only helps download faster, actual files are all the same)
 4. Go to BIOS/UEFI (can be entered via "Recovery Options" (if on Windows) or a shortcut varies depends on motherboard companies
-5. Turn off CSM Support and Securee Boot (Location of these depends on motherboard companies)
+5. Turn off CSM Support and Secure Boot (Location of these depends on motherboard companies)
 6. Choose boot in Arch
 7. Once in Arch, follow the documentations on https://wiki.archlinux.org/title/Installation_guide | Start at 1.5: Set the console keyboard layout and font
 
