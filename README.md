@@ -1,4 +1,6 @@
 # Arch + Hyprland Dotfiles  
+![image](https://github.com/user-attachments/assets/c8996dcd-7d12-4966-9ce6-89bd364efd1b)
+
 
 ## Features
 - **Hyprland**: Dynamic tiling, smooth animations, custom keybinds
