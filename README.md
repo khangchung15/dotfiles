@@ -108,10 +108,9 @@ System
 - sudo systemctl start service → Start a service (e.g., bluetooth)
 
 Shortcuts
-- Ctrl+C → Force-stop current command
-- Ctrl+D → Exit terminal session
+- Ctrl+X → Force-stop current command
+- Super+Q → Exit terminal session
 - Ctrl+L or clear → Clear terminal
-- Ctrl+R → Search command history
-- Ctrl+Shift+C/V → Copy/paste in terminal (depends on emulator)
+- Ctrl+C/V → Copy/paste in terminal
 
 ## Do not run ```rm -rf```, this will recursively force to delete everything
