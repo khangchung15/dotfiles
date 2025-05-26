@@ -60,6 +60,7 @@ Start Hyprland: ```exec Hyprland```
 ~/.config/kitty/custom.conf
 - Copy/Paste using Ctrl C/V
 - Stop terminal using Ctrl X
+
 ~/.config/hypr/hyprland.conf
 - Key Bind for Rofi
 - Monitor config (monitor = DP-1, 2560x1440@280, auto, 1 | change to your monitor name, not DP-1)
@@ -67,6 +68,7 @@ Start Hyprland: ```exec Hyprland```
 - Prevent sleep
 - Initiate custom waybar
 - Custom terminal appearance
+
 ~/.config/hypr/conf/keybindings/default.conf
 - Most of the keybindings, feel free to edit
 
