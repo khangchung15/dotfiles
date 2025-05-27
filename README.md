@@ -11,42 +11,6 @@
 - Hyprland
 - Basic terminal emulator proficiency
 
-## Why Arch Linux?
-- Bloat-free (no preinstalled solitaire)
-- Yours (no corporate "helpful" background services)
-- Transparent (fully open source)
-- Free (no need to activate like Windows)
-- Helps you understand about the OS as you install
-- Helps you explore and read the manual (Arch Wiki)
-- Fully customizable from top to bottom
-- No holding hands like other Linux distros
-- Considered by many to be the most difficult OS to install
-- Other distros have many unnecessary pre-installed software
-- Hyprland will be easier to install
-- Released on 2002 which is my birthyear
-- Able to say "I use Arch, btw"
-- Its logo is an 'A' and it's my favorite letter (I think)
-
-Congrats, you have been convinced that Arch is superior. Now let's install Arch Linux
-
-## Installation Guide: Base Arch Installation
-1. If dual boot with Windows (change between Arch and Windows), then go to Disc Management and allocate more free space for Arch Linux (minimum 50GB recommended). If you only want Arch, then skip to step 2
-2. Install Etcher, Rufus, or Ventoy to make bootable USB. I used Rufus for Arch
-3. Install ISO file from [archlinux.org/download](https://archlinux.org/download/) | Scroll all the way down and find your country (This only helps download faster, actual files are all the same)
-4. Go to BIOS/UEFI (can be entered via "Recovery Options" (if on Windows) or a shortcut varies depends on motherboard companies
-5. Turn off CSM Support and Secure Boot (Location of these depends on motherboard companies)
-6. Choose boot in Arch
-7. Once in Arch, follow the documentations on https://wiki.archlinux.org/title/Installation_guide | Start at 1.5: Set the console keyboard layout and font
-8. Run ```sudo pacman -S git base-devel``` to install essential packages
-
-## Successfully install Arch Linux?
-- Congratulations! You’ve escaped the confines of proprietary bloat. Your system is now as lightweight as your soul after uninstalling Windows. Enjoy the freedom
-- Don’t panic if things break, that’s how you learn. The Arch Wiki is your bible and the terminal is your playground.
-- Also, feel free to say "I use Arch, btw" to strangers you met
-
-## Installation Guide: Hyprland & Dependencies
-```sudo pacman -S hyprland kitty waybar rofi grim slurp swaybg swaylock-effects firefox```
-
 ## Install this custom config
 ```bash
 git clone https://github.com/khangchung15/dotfiles.git ~/.dotfiles
@@ -55,22 +19,6 @@ stow -nv hypr waybar rofi
 ```
 ## Post-Installation
 Start Hyprland: ```exec Hyprland```
-
-## Config Note
-~/.config/kitty/custom.conf
-- Copy/Paste using Ctrl C/V
-- Stop terminal using Ctrl X
-
-~/.config/hypr/hyprland.conf
-- Key Bind for Rofi
-- Monitor config (monitor = DP-1, 2560x1440@280, auto, 1 | change to your monitor name, not DP-1)
-- Cursor config (name = razer-razer-basilisk-v3-pro | change to your mouse name)
-- Prevent sleep
-- Initiate custom waybar
-- Custom terminal appearance
-
-~/.config/hypr/conf/keybindings/default.conf
-- Most of the keybindings, feel free to edit
 
 ## Hyprland Keybinds (Super = Windows Key)
 Window Management
