@@ -1,4 +1,4 @@
-This is a Hyprland config file
+# This is a Hyprland config file
 
 Hyprland will be launched automatically on startup
 
