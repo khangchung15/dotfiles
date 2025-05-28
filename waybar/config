@@ -1,0 +1,70 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 48,
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/media",
+    ],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+
+    // Workspaces
+    "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+        "1": "=",        // Desktop
+        "2": "",        // Terminal
+        "3": "",        // Browser
+        "4": "",        // Code editor
+        "5": "",        // Files
+        "6": "",        // Music
+        "7": "",        // Video
+        "8": "",        // Chat
+        "9": "",        // Graphics
+        "10": "",      // Misc
+        "active": "",   // Active workspace indicator
+        "default": "", // Default icon
+        "empty": ""     // Empty workspace
+    },
+       "tooltip": false
+    },
+    "custom/media": {
+        "format": "󰎈 {}",
+        "return-type": "json",
+        "exec": "/home/kevin/.config/waybar/scripts/mediaplayer.sh",
+        "interval": 1,
+        "signal": 10,
+        "max-length": 50,
+        "min-length": 30,
+        "smooth-scrolling-threshold": 1,
+        "tooltip": false
+    },
+    // Network
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "  Ethernet",
+        "format-disconnected": "  Disconnected",
+        "tooltip-format": "{ifname} ({signalStrength}%)",
+        "on-click": "nm-connection-editor"
+    },
+
+    // Audio
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-icons": ["", "", ""],
+        "tooltip": false,
+    },
+
+    // Clock
+    "clock": {
+        "format": "  {:%I:%M %p}",
+        "tooltip-format": "{:%A, %B %d %Y}",
+        "on-click": "gnome-calendar"
+    }
+}
