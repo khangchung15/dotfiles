@@ -26,4 +26,4 @@ Hyprland will launch Hyprpaper in Exec Once section
 Hyprland will launch desktop environment in Exec Once section
 
 ## Purpose
-- This is for forcing GTK apps such as the wifi module in waybar to use dark theme
+- This is for forcing GTK apps such as nm-connection-editor (wifi module) in waybar to use dark theme
