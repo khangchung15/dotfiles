@@ -1,4 +1,4 @@
-# Hyprland config file: hyprland.conf
+# Hyprland config file: ```hyprland.conf```
 
 Hyprland will be launched automatically on startup
 
@@ -13,7 +13,7 @@ Hyprland will be launched automatically on startup
   - Slight rounding at corners
   - Slight shadow
 
-# Hyprland wallpaper: hyprpaper.conf
+# Hyprland wallpaper: ```hyprpaper.conf```
 
 Hyprland will launch Hyprpaper in Exec Once section
 
