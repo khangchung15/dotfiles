@@ -1,4 +1,4 @@
-# This is a Hyprland config file
+# Hyprland config file: hyprland.conf
 
 Hyprland will be launched automatically on startup
 
@@ -12,3 +12,18 @@ Hyprland will be launched automatically on startup
   - Strong outline for currently active window
   - Slight rounding at corners
   - Slight shadow
+
+# Hyprland wallpaper: hyprpaper.conf
+
+Hyprland will launch Hyprpaper in Exec Once section
+
+## Instruction
+- Add the wallpaper png file in Downloads directory & rename wallpaper.png
+- Or change the file path in config file
+
+# Environment
+
+Hyprland will launch desktop environment in Exec Once section
+
+## Purpose
+- This is for forcing GTK apps such as the wifi module in waybar to use dark theme
