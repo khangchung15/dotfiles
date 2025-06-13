@@ -4,7 +4,7 @@
     "height": 48,
     "modules-left": [
         "hyprland/workspaces",
-        "custom/media",
+        "custom/media"
     ],
     "modules-center": ["clock"],
     "modules-right": [
@@ -14,56 +14,57 @@
         "battery"
     ],
 
-    // Workspaces
     "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-        "1": "=",        // Desktop
-        "2": "",        // Terminal
-        "3": "",        // Browser
-        "4": "",        // Code editor
-        "5": "",        // Files
-        "6": "",        // Music
-        "7": "",        // Video
-        "8": "",        // Chat
-        "9": "",        // Graphics
-        "10": "",      // Misc
-        "active": "",   // Active workspace indicator
-        "default": "", // Default icon
-        "empty": ""     // Empty workspace
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": "",
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "tooltip": false
     },
-       "tooltip": false
-    },
+
     "custom/media": {
-        "format": "󰎈 {}",
+        "format": "{icon} {text}",
         "return-type": "json",
-        "exec": "/home/kevin/.config/waybar/scripts/mediaplayer.sh",
+        "exec": "~/.config/waybar/mediaplayer.sh",
         "interval": 1,
         "signal": 10,
         "max-length": 50,
-        "min-length": 30,
-        "smooth-scrolling-threshold": 1,
+        "format-icons": {
+            "playing": "",
+            "paused": "",
+            "stopped": ""
+        },
         "tooltip": false
     },
-    // Network
+
     "network": {
-        "format-wifi": "  {essid}",
-        "format-ethernet": "  Ethernet",
-        "format-disconnected": "  Disconnected",
+        "format-wifi": "{essid}",
+        "format-ethernet": "Ethernet",
+        "format-disconnected": "Disconnected",
         "tooltip-format": "{ifname} ({signalStrength}%)",
         "on-click": "nm-connection-editor"
     },
 
-    // Audio
     "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-icons": ["", "", ""],
-        "tooltip": false,
+        "format": "{volume}% ",
+        "format-muted": "Muted",
+        "tooltip": false
     },
 
-    // Clock
     "clock": {
-        "format": "  {:%I:%M %p}",
+        "format": "{:%I:%M %p}",
         "tooltip-format": "{:%A, %B %d %Y}",
         "on-click": "gnome-calendar"
     }
