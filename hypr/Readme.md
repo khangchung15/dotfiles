@@ -21,7 +21,7 @@ Hyprland will launch Hyprpaper in Exec Once section
 - Add the wallpaper png file in Downloads directory & rename wallpaper.png
 - Or change the file path in config file
 
-# Environment
+# Desktop Environment: ```env.conf```
 
 Hyprland will launch desktop environment in Exec Once section
 
