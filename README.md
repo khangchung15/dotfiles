@@ -1,6 +1,7 @@
 
 # Arch + Hyprland Dotfiles  
-![image](https://github.com/user-attachments/assets/a46d8ccb-dfb8-40fa-82d4-4e59e2461de8)
+![image](https://github.com/user-attachments/assets/32843818-4234-4768-84b0-d60ee3d5a1c8)
+
 
 
 ## Features
