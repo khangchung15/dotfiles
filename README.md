@@ -1,3 +1,4 @@
+
 # Arch + Hyprland Dotfiles  
 ![image](https://github.com/user-attachments/assets/6af0f3ff-b1de-482d-9017-3612db0e4c10)
 
@@ -11,14 +12,8 @@
 - Hyprland
 - Basic terminal emulator proficiency
 
-## Install this custom config
-```bash
-git clone https://github.com/khangchung15/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-stow -nv hypr waybar rofi 
-```
-## Post-Installation
-Start Hyprland: ```exec Hyprland```
+## Note:
+The directories and files in root of this github should be in ~/.config unless it is in ```other files``` directory
 
 ## Hyprland Keybinds (Super = Windows Key)
 Window Management
