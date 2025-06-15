@@ -7,3 +7,5 @@ Screenshot will be launched using Print Screen button (PrtSc)
 - Remove option to capture everything & active display (capture selection can do the same function)
 - Set screenshot UI to be similar to Rofi
 - Saved screenshot will be stored in ~/Pictures (~ meaning root directory)
+
+Install necessary packages: ```sudo pacman -S hyprshot grim slurp```
