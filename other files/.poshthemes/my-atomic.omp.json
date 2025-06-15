@@ -7,7 +7,7 @@
         {
           "background": "#d896a8",
           "foreground": "#ffffff",
-          "leading_diamond": "\u256d\u2500\ue0b6",
+          "leading_diamond": "\n\u256d\u2500\ue0b6",
           "style": "diamond",
 	 "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} \ue0b1",
           "type": "os"
