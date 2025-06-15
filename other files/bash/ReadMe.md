@@ -1,5 +1,6 @@
 # This is bash config file
 You should have an auto generated file on ~/.bashrc already
+If not, create .bashrc file in root directory (~)
 
 ## Purpose of this bash config
 - Enable colored output for more human-readable
