@@ -3,83 +3,41 @@
 # / ___|  ___ _ __ ___  ___ _ __  ___| |__   ___ | |_
 # \___ \ / __| '__/ _ \/ _ \ '_ \/ __| '_ \ / _ \| __|
 #  ___) | (__| | |  __/  __/ | | \__ \ | | | (_) | |_
-# |____/ \___|_|  \___|\___|_| |_|___/_| |_|\___/ \__|
-#
-# Based on https://github.com/hyprwm/contrib/blob/main/grimblast/screenshot.sh
+# |____/ \___|_|  \___|\___|_| |_|___/_| |_|\___/ \__| 
 # -----------------------------------------------------
 
-# Screenshots will be stored in $HOME by default.
-# The screenshot will be moved into the screenshot directory
+SCREENSHOT_DIR="$HOME/Pictures/Screenshots"
+mkdir -p "$SCREENSHOT_DIR"
+FILENAME="Screenshot_$(date +'%Y-%m-%d-%H%M%S').png"
+FULL_PATH="$SCREENSHOT_DIR/$FILENAME"
 
-# Add this to ~/.config/user-dirs.dirs to save screenshots in a custom folder:
-# XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
-
-prompt='Screenshot'
-mesg="DIR: ~/Pictures"
-
-# Screenshot Filename
-source ~/.config/ml4w/settings/screenshot-filename.sh
-
-# Screenshot Folder
-source ~/.config/ml4w/settings/screenshot-folder.sh
-
-# Screenshot Editor
-export GRIMBLAST_EDITOR="$(cat ~/.config/ml4w/settings/screenshot-editor.sh)"
-
-copy='Copy'
-save='Save'
-copy_save='Copy & Save'
-edit='Edit'
-
-# Rofi CMD
-rofi_cmd() {
-    rofi -dmenu -replace -config ~/.config/rofi/config.rasi \
-        -theme-str 'window {width: 60%; border-radius: 12px;}' \
-        -theme-str 'listview {lines: 4;spacing: 0; scrollbar: false;}' \
-        -theme-str 'scrollbar {enabled: false;}' \
-        -theme-str 'element {padding: 12px;}' \
-        -theme-str 'element-text {font: "Fira Code 14";}' \
-        -theme-str 'inputbar {enabled: false;}' \
-        -theme-str 'message {enabled: false;}' \
-        -i -no-show-icon -p "$prompt" -mesg "$mesg"
+show_menu() {
+    echo -e "Copy\nSave\nCopy + Save\nEdit" | \
+    rofi -dmenu -p "Screenshot" -mesg "DIR: $SCREENSHOT_DIR" \
+        -theme-str 'window {width: 25%; border-radius: 12px;}' \
+        -theme-str 'listview {lines: 4; spacing: 0;}'
 }
 
-# Choose to save or copy photo
-# Ask for confirmation
-copy_save_editor_exit() {
-    echo -e "$copy\n$save\n$copy_save\n$edit" | rofi_cmd
-}
-
-# Confirm and execute
-copy_save_editor_run() {
-    selected_chosen="$(copy_save_editor_exit)"
-    if [[ "$selected_chosen" == "$copy" ]]; then
-        option_chosen=copy
-        takescreenshot
-    elif [[ "$selected_chosen" == "$save" ]]; then
-        option_chosen=save
-        takescreenshot
-    elif [[ "$selected_chosen" == "$copy_save" ]]; then
-        option_chosen=copysave
-        takescreenshot
-    elif [[ "$selected_chosen" == "$edit" ]]; then
-        option_chosen=edit
-        takescreenshot
-    else
-        exit
-    fi
-}
-
-# take shots
-takescreenshot() {
-    sleep 1
-    grimblast --notify "$option_chosen" "area" $NAME
-    if [ -f $HOME/$NAME ]; then
-        if [ -d $screenshot_folder ]; then
-            mv $HOME/$NAME $screenshot_folder/
-        fi
-    fi
-}
-
-# Execute Command
-copy_save_editor_run
+case $(show_menu) in
+    "Copy")
+        # Capture to clipboard ONLY (no file saved)
+        grim -g "$(slurp)" - | wl-copy
+        notify-send "Screenshot copied to clipboard" -i edit-copy
+        ;;
+    "Save")
+        # Save to file ONLY (no clipboard)
+        grim -g "$(slurp)" "$FULL_PATH"
+        notify-send "Screenshot saved" "$FILENAME" -i document-save
+        ;;
+    "Copy + Save")
+        # Save to file AND copy to clipboard
+        grim -g "$(slurp)" "$FULL_PATH" && \
+        wl-copy < "$FULL_PATH"
+        notify-send "Screenshot saved and copied" "$FILENAME" -i edit-paste
+        ;;
+    "Edit")
+        grim -g "$(slurp)" "$FULL_PATH" && \
+        swappy -f "$FULL_PATH" -o "$FULL_PATH" &
+        notify-send "Editing screenshot" "Opened in Swappy" -i accessories-image-editor
+        ;;
+esac
