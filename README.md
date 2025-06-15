@@ -15,7 +15,7 @@
 - Basic terminal emulator proficiency
 
 ## Note:
-The directories and files in root of this github should be in ~/.config unless it is in ```other files``` directory
+The directories and files in root of this github should be in ```~/.config``` unless it is in ```other files``` directory
 
 ## Hyprland Keybinds (Super = Windows Key)
 Window Management
